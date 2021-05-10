@@ -37,4 +37,4 @@ Trackable means avoiding conflicts, where there are multiple possible matches fo
 \[ All Even Slightly Likely Matches \] -> \[ Threshold 1 (Very Low) \] -> \{ Update (w\/ IMU) \} ->  \[ Threshold 2 (Med., Normal Value) \] --|
 
 \{ Update Conflict Threshold \} <- \[ Conflict Threshold (High) \] <- \{\{ Significant Delta? (max v 2nd) \}\} <- \{\{ Conflict? (else exit) \}\} <-|<br>
-\{ @ mean(max, mean(others)) \}<br>
+\{ ^^^ @ mean(max, mean(others)) \}<br>
