@@ -34,6 +34,7 @@ Use this to yield both P(trackable) as well as the more obvious P(stationary).
 
 Trackable means avoiding conflicts, where there are multiple possible matches for a given feature that the IMU test deems OK. 
 
-\[ All Even Slightly Likely Matches \] -> \[ Threshold 1 (Very Low) \] -> \{ Update with Augmentation Bayes Factor \} ->  \[ Threshold 2 (Medium) \] -|
+\[ All Even Slightly Likely Matches \] -> \[ Threshold 1 (Very Low) \] -> \{ Update (w\/ IMU) \} ->  \[ Threshold 2 (Medium) \] -|
 
-................................. \[ Conflict Threshold (High) \] <- \{\{ Significant Delta? \}\} <- \{\{ Conflict? (else normal) \}\} <-|
+\{ Update Conflict Threshold \} <- \[ Conflict Threshold (High) \] <- \{\{ Significant Delta? (1v2) \}\} <- \{\{ Conflict? \}\} <-|
+\{ @ mean(max, mean(others)) \}
