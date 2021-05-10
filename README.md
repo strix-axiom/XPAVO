@@ -7,13 +7,16 @@ Visual odometry, progressively improving estimates of (<br>
 
 ▶️ Possible Features and their Possible Shifts (motion solved)<br>
 ⬇️ 🔄 🔄 Update probabilities (w\/ IMU Data) (w\/ sample for `P(trackable)`)<br>
-⬇️ 🔄 🔄 Satisfies Normal Threshold (`T_xn`)? (else ⏬)<br>
-⬇️ 🔄 Conflicts, i.e. multiple within Conflict Threshold (`T_xc`)? (else ▶️ `max` ⏬)<br>
-⬇️ 🔄 Significant difference (`| max - max_2 |`) (`T_xcd`)? (else ⏬)<br>
-⬇️ 🔄 Choose `max` and update Conflict Threshold (`T_xc`) ⏩ `mean(max, mean(others))`!<br>
+⬇️ 🔄 🔄 Satisfies Normal Threshold (`T_xn`)❓ (else ⏬)<br>
+⬇️ 🔄 Conflicts, i.e. multiple within Conflict Threshold (`T_xc`)❓ (else ▶️ `max` ⏬)<br>
+⬇️ 🔄 Significant difference (`| max - max_2 |`) (`T_xcd`)❓ (else ⏬)<br>
+⬇️ 🔄 Choose `max` and update ⏩ Conflict Threshold (`T_xc`) as `mean(max, mean(others))`!<br>
 ▶️ Possible Features with shifts resolved<br>
 ⬇️ 🔄 Update probabilities (w\/ IMU Data) (w\/ sample for `P(stationary)`)
-⏩ Feature Buffer
+⬇️ 🔄 Satisfies `P(stationary)` threshold (`T_s`)❓
+⬇️ 🔄 🔀 Use random items to replace those in ⏩ Feature Buffer that don't (
+-> 🔄 Satisfies
+)
 ... TODO ...
 
 main system (~stat) :
