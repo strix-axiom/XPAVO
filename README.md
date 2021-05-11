@@ -10,9 +10,9 @@ eXtended Probabilistic Augmented Visual Odometry
 ⬇️ 🔄 ↪️ ➡️ Yield ⏬ `max`, and update ⏩ Matching Threshold (`T_x`) as `mean(max, mean(others))`<br>
 ⬇️ 🔄 ➡️ Update probability `P(trackable)` (w\/ any conflict (first excluded)❓) (w\/ sample for Bayes Theorem)<br>
 ▶️ Possible Shifts (Feature -> Match, motion solved), with `P(trackable)`<br>
-⬇️ 🔄 🔀 Sort by `P(trackable)`
-⬇️ 🔃 Take while `P(trackable)` is within the Feature Buffer Threshold (`T_b`)❓
-⏩ Feature Buffer
+⬇️ 🔄 🔀 Sort by `P(trackable)`<br>
+⬇️ 🔃 Take while `P(trackable)` is within the Feature Buffer Threshold (`T_b`)❓<br>
+⏩ Feature Buffer<br>
 
 -- begin old --
 
