@@ -3,7 +3,7 @@ eXtended Probabilistic Augmented Visual Odometry
 
 ▶️ Possible Possible Shifts (Feature -> Possible Matches, motion solved) ( ↙️ IN ↙️ )<br>
 ⬇️ 🔄 🔄 ➡️ Update probability `P(match)` (w\/ IMU Data) (w\/ sample for Bayes Theorem)<br>
-⬇️ 🔄 🔄 ↔️ Probability (`P(match)`) above `50%`❓
+⬇️ 🔄 🔄 ↔️ Probability (`P(match)`) above `50%`❓<br>
 ⬇️ 🔄 🔄 ↔️ Satisfies Matching Threshold (`T_m`)❓<br>
 ⬇️ 🔄 ⤵️ Conflicts, i.e. multiple options❓(else yield ⏬ the one given )<br>
 ⬇️ 🔄 ↪️ ↔️ Resolvable (`| max - max_2 | > T_xcd`)❓ (else yield ⏬ `nothing`)<br>
