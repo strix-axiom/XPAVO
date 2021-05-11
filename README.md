@@ -15,7 +15,7 @@ Visual odometry, progressively improving estimates of (<br>
 ⬇️ 🔄 Update probabilities (w\/ IMU Data) (w\/ sample for `P(stationary)`)<br>
 ⬇️ 🔄 Satisfies `P(stationary)` threshold for Feature Buffer (`T_sb`)❓<br>
 ⬇️ 🔄 🔀 Sort these by `P(stationary)`<br>
-⏩ In the Feature Buffer, 🔄 ⏩ remove those that fail the threshold (`T_s`) and `P(trackable) >= T_x` test❓(else ⬇️)<br>
+⏩ In the Feature Buffer, 🔄 ⏩ remove those that fail the threshold (`T_s`) and `P(trackable) >= T_x`❓(else ⬇️)<br>
 ▶️ Feature Buffer<br>
 ⬇️ 🔄 Satisfies Final `P(usable)` threshold (`T_u`), where `P(usable) = P(trackable) * P(stationary)`❓<br>
 ▶️ Resulting Chosen Features ( ↘️ OUT ↘️ )<br>
