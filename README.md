@@ -16,4 +16,6 @@ eXtended Probabilistic Augmented Visual Odometry
 ⬇️ 🔄 ↔️ Satisfies Final Threshold (`T_f`), i.e. `P(trackable) > 1 - T_f`❓<br>
 ▶️ Usable Feature Shifts ( ↘️ OUT ↘️ )<br>
 
-`P(trackable) = P(n_unresolvable_conflicts < 2)`
+`trackable = n_unresolvable_conflicts < 2`
+`O(trackable | resolvable_conflict) = O(trackable) * bayes_factor`
+`O(match | imu_data) = O(match) * bayes_factor`
