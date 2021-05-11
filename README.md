@@ -14,7 +14,7 @@ eXtended Probabilistic Augmented Visual Odometry
 ⬇️ 🔃 Take while `P(trackable)` is within the Feature Buffer Threshold (`T_b`)❓
 ⏩ Feature Buffer
 
--- old --
+-- begin old --
 
 ⬇️ 🔄 Satisfies `P(trackable)` threshold for Feature Buffer (`T_xb`)❓<br>
 ⬇️ 🔄 🔀 Sort these by `P()`<br>
@@ -22,3 +22,5 @@ eXtended Probabilistic Augmented Visual Odometry
 ▶️ Feature Buffer<br>
 ⬇️ 🔄 Satisfies Final `P(usable)` threshold (`T_u`), where `P(usable) = P(trackable) * P(stationary)`❓<br>
 ▶️ Resulting Chosen Features ( ↘️ OUT ↘️ )<br>
+
+-- end old --
