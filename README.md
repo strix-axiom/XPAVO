@@ -2,11 +2,13 @@
 eXtended Probabilistic Augmented Visual Odometry
 
 ▶️ Possible Shifts (Feature -> Possible Matches, motion solved) ( ↙️ IN ↙️ )<br>
-⬇️ 🔄 🔄 ➡️ Update probability (w\/ IMU Data) (w\/ sample for Bayesian `P(match)`)<br>
+⬇️ 🔄 🔄 ➡️ Update probability `P(match)` (w\/ IMU Data) (w\/ sample for Bayes Theorem)<br>
 ⬇️ 🔄 🔄 ↔️ Satisfies Matching Threshold (`T_x`)❓<br>
-⬇️ 🔄 ⤵️ Conflicts, i.e. multiple options❓(else ⏬ @ )
-⬇️ 🔄 ↔️ Significant Difference (`| max - max_2 | > T_xcd`)❓ (else )
-⬇️ 🔄 : 
+⬇️ 🔄 ⤵️ Conflicts, i.e. multiple options❓(else yield ⏬ the one given )<br>
+⬇️ 🔄 ↪️ ↔️ Resolvable (`| max - max_2 | > T_xcd`)❓ (else yield ⏬ `nothing`)<br>
+⬇️ 🔄 ↪️ ➡️ Yield ⏬ `max`, and update ⏩ Matching Threshold (`T_x`) as `mean(max, mean(others))`
+⬇️ 🔄 ➡️ Update probability `P(trackable)` as `P(!unresolvable)` (w\/ conflict) (w\/ sample for Bayes Theorem)<br>
+▶️ Possible Shifts (Feature -> Match, motion solved)
 
 ▶️ Possible Features and their Possible Shifts (motion solved) ( ↙️ IN ↙️ )<br>
 ⬇️ 🔄 🔄 Update probabilities (w\/ IMU Data) (w\/ sample for Bayesian `P(trackable)`)<br>
