@@ -12,13 +12,13 @@ Visual odometry, progressively improving estimates of (<br>
 ⬇️ 🔄 Significant difference (`| max - max_2 |`) (`T_xcd`)❓ (else ⏬)<br>
 ⬇️ 🔄 Choose `max` and update ⏩ Matching Threshold (`T_x`) as `mean(max, mean(others))`!<br>
 ▶️ Possible Features with shifts resolved<br>
-⬇️ 🔄 Update probabilities (w\/ IMU Data) (w\/ sample for `P(stationary)`)
-⬇️ 🔄 Satisfies `P(stationary)` threshold for Feature Buffer (`T_sb`)❓
-⬇️ 🔄 🔀 Sort these by `P(stationary)`
-⏩ In the Feature Buffer, 🔄 ⏩ remove those that fail the threshold (`T_s`) and `P(trackable) >= T_x` test❓(else ⬇️)
-▶️ Feature Buffer
-⬇️ 🔄 Satisfies Final `P(usable)` threshold (`T_u`), where `P(usable) = P(trackable) * P(stationary)`❓
-▶️ Resulting Chosen Features ( ↘️ OUT ↘️ )
+⬇️ 🔄 Update probabilities (w\/ IMU Data) (w\/ sample for `P(stationary)`)<br>
+⬇️ 🔄 Satisfies `P(stationary)` threshold for Feature Buffer (`T_sb`)❓<br>
+⬇️ 🔄 🔀 Sort these by `P(stationary)`<br>
+⏩ In the Feature Buffer, 🔄 ⏩ remove those that fail the threshold (`T_s`) and `P(trackable) >= T_x` test❓(else ⬇️)<br>
+▶️ Feature Buffer<br>
+⬇️ 🔄 Satisfies Final `P(usable)` threshold (`T_u`), where `P(usable) = P(trackable) * P(stationary)`❓<br>
+▶️ Resulting Chosen Features ( ↘️ OUT ↘️ )<br>
 
 main system (~stat) :
 
