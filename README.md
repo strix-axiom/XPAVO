@@ -9,9 +9,11 @@ eXtended Probabilistic Augmented Visual Odometry
 ⬇️ 🔄 ↪️ ↔️ Resolvable (`| max - max_2 | > T_cd`)❓ (else yield ⏬ `nothing`)<br>
 ⬇️ 🔄 ↪️ ➡️ Yield ⏬ `max`, and update ⏩ Matching Threshold (`T_m`) as `mean(max, mean(...others))`<br>
 ⬇️ 🔄 ➡️ Update probability `P(trackable)` (w\/ any conflict (first excluded)❓) (w\/ sample for Bayes Theorem)<br>
-▶️ Possible Shifts (Feature -> Match, motion solved), with `P(trackable) = P(n_unresolvable_conflicts < 2)`<br>
+▶️ Possible Shifts (Feature -> Match, motion solved), with `P(trackable)`<br>
 ⬇️ 🔄 🔀 Sort by `P(trackable)`<br>
 ⬇️ 🔃 Take while `P(trackable)` is within the Feature Buffer Threshold (`T_b`)❓<br>
 ⏩ 🔄 ↕️ Update Feature Buffer, use them to replace those that are dropped or fail `P(trackable) > 1 - T_b`❓<br>
 ⬇️ 🔄 ↔️ Satisfies Final Threshold (`T_f`), i.e. `P(trackable) > 1 - T_f`❓<br>
 ▶️ Usable Feature Shifts ( ↘️ OUT ↘️ )<br>
+
+`P(trackable) = P(n_unresolvable_conflicts < 2)`
