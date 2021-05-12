@@ -12,7 +12,7 @@ eXtended Probabilistic Augmented Visual Odometry
 ▶️ Possible Shifts (Feature -> Match, motion solved), with `P(trackable)`<br>
 ⬇️ 🔄 🔀 Sort by `P(trackable)`<br>
 ⬇️ 🔃 Take while `P(trackable)` is within the Feature Buffer Threshold (`T_b`)❓<br>
-⏩ 🔄 ↕️ Update Feature Buffer, use them to replace those that are dropped or fail `P(trackable) > 1 - T_b`❓<br>
+⏩ 🔄 ↕️ Update Feature Buffer, use them to replace those that are dropped or fail `P(trackable) > 1 - T_b2`❓<br>
 ⬇️ 🔄 ↔️ Satisfies Final Threshold (`T_f`), i.e. `P(trackable) > 1 - T_f`❓<br>
 ▶️ Usable Feature Shifts ( ↘️ OUT ↘️ )<br>
 
